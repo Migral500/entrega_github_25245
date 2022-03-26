@@ -159,6 +159,7 @@ form {
 
 /* GIT animaciones, transformaciones y/o gradientes */
 
+/* MOVIMIENTO */
 #comprarAhora img{
     transition: 2s ease-in-out;
 }
@@ -167,8 +168,9 @@ form {
     transform: scale(1.2);
 }
 
+/* CAMBIA COLOR */
 #bienvenidos{
-    transition: color 2s ease-in-out;
+    transition: color 4s ease-in-out;
 }
 
 #bienvenidos:hover{
