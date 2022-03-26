@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+}
+
+/* NAVEGACION */
+nav {
+    background-color: black;
+    width: 80%;
+    margin: 5px auto;
+}
+
+nav ul {
+    list-style: none;
+}
+
+.menu>li {
+    position: relative;
+    display: inline-block;
+    left: 38%;
+}
+
+.menu>li>a {
+    display: block;
+    text-decoration: none;
+    padding: 15px 10px;
+    color: white;
+}
+
+.menu>li>a:hover {
+    text-decoration: underline;
+}
+
+.subMenu {
+    position: absolute;
+    width: 100%;
+    display: none;
+}
+
+/* AYUDA */
+/* aca no puedo hacer que aparezca el display AYUDA por favor! */
+.menu li:hover .subMenu {
+    display: block;
+    color: white;
+    padding: 5px;
+}
+
+.subMenu li a {
+    display: block;
+    padding: 5px;
+}
+
+/* FONDO TEXTURA */
+
+main {
+    background: url(../img/wallpaper.jpg);
+}
+
+/* TITULOS */
+
+h1 {
+    color: rgb(204, 204, 204);
+    text-decoration: underline;
+    font-size: 5em;
+    position: relative;
+    text-align: center;
+    padding: 30px;
+}
+
+/* SUBTITULOS */
+
+h2 {
+    text-align: center;
+    font-size: 3em;
+    padding: 30px;
+}
+
+.paragraph .paragraph__link--red {
+    color: red;
+}
+
+.paragraph {
+    padding: 0% 15%;
+}
+
+/* DESCRIPCION BIENVENIDOS */
+
+.paragraph_01 {
+    padding: 20px;
+}
+
+.imagecenter {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+
+/* PIE DE PAGINA */
+
+footer {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+form {
+    margin: 0 auto;
+    width: 300px;
+    padding: 20px;
+}
+
+.field {
+    border: 1px #ccc;
+    padding: 10px;
+    width: 300px;
+}
+
+.content_center {
+    width: 115%;
+}
+
+/* GRID */
+
+.galeria_fanart {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+        "img1 img2"
+        "img3 img4";
+}
+
+/* NO SE PORQUE LA IMAGENES NO SON RESPONSIVE AL 100 */
+
+.imagecenter {
+    width: 100%;
+}
+
+/* MEDIA QUERIE */ 
+
+@media screen and (max-width:720px) {
+    .galeria_fanart {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas:
+            "img1"
+            "img2"
+            "img3"
+            "img4";
+    }
+}
+
+/* GIT animaciones, transformaciones y/o gradientes */
+
+#comprarAhora img{
+    transition: 2s ease-in-out;
+}
+
+#comprarAhora img:hover{
+    transform: scale(1.2);
+}
+
+#bienvenidos{
+    transition: color 2s ease-in-out;
+}
+
+#bienvenidos:hover{
+    color: darkred;
+}
