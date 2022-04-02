@@ -65,15 +65,11 @@ h1 {
 
 /* SUBTITULOS */
 
-<<<<<<< HEAD
-
-=======
 h2 {
     text-align: center;
     font-size: 3em;
     padding: 30px;
 }
->>>>>>> 44d61d763d6a37e798f5dbf8aa943b1d316dbecd
 
 .paragraph .paragraph__link--red {
     color: red;
