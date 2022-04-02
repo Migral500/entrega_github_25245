@@ -1,0 +1,9 @@
+/* MISC */
+/* PARTIALS */
+footer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+  background-color: black; }
+
+/* VIEWS */

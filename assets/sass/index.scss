@@ -1,0 +1,19 @@
+/* MISC */
+
+@import "../sass/misc/variables";
+@import "../sass/misc/normalize";
+@import "../sass/misc/mixins";
+@import "../sass/misc/animations";
+
+/* PARTIALS */
+
+@import "../sass/partials/header";
+@import "../sass/partials/footer";
+
+/* VIEWS */
+
+@import "../sass/views/home";
+@import "../sass/views/clases";
+@import "../sass/views/actos";
+@import "../sass/views/fanart";
+@import "../sass/views/contacto";
