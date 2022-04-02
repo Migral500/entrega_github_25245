@@ -18,33 +18,46 @@
 
 <body>
     <header>
-        <nav class="navegation">
-            <a href="index.html"><img src="assets/img/png_logo.png" class="mainlogo" alt="logo"></a>
-            <ul class="menu">
-                <li><a href="index.html">MAIN</a></li>
-                <li><a href="assets/pages/clases.html">CLASES</a></li>
-                <ul class="subMenu">
-                    <li><a href="">Nigromante</a></li>
-                    <li><a href="">Druida</a></li>
-                </ul>
-                <li><a href="assets/pages/actos.html">ACTOS</a></li>
-                <li><a href="assets/pages/fanart.html">FANART</a></li>
-                <li><a href="assets/pages/contacto.html">CONTACTO</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container px-5">
+                <a href="index.html"><img src="assets/img/png_logo.png" class="mainlogo" alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation"><span
+                        class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">MAIN</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              CLASES
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <li><a class="dropdown-item" href="assets/pages/clases.html">Nigromante</a></li>
+                              <li><a class="dropdown-item" href="assets/pages/clases.html">Druida</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="assets/pages/clases.html">ETC</a></li>
+                            </ul>
+                        <li class="nav-item"><a class="nav-link" href="assets/pages/actos.html">ACTOS</a></li>
+                        <li class="nav-item"><a class="nav-link" href="assets/pages/fanart.html">FANART</a></li>
+                        <li class="nav-item"><a class="nav-link" href="assets/pages/contacto.html">CONTACTO</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
         <section class="indexInfo">
             <article class="paragraph">
-                <h1 class="titule" id="bienvenidos">BIENVENIDOS</h1>
-                <div class="imagecenter">
-                    <picture class="imageMain">
-                        <img src="assets/img/Diablo_II.jpg" alt="imagen de juego">
-                    </picture>
+                <h1 class="text-center" id="bienvenidos">BIENVENIDOS</h1>
+                <div class="row">
+                    <div class="text-center">
+                        <img src="assets/img/Diablo_II.jpg" class="img-fluid" alt="imagen de juego">
+                    </div>
                 </div>
-                <div class="paragraphMain">
+                <div class="justify-content-center">
                     <!-- SE LE CAMBIÓ EL TEXTO HASTA QUE DECIDA DND APLICAR BIEN BOOTSTRAP -->
-                    <p class="fw-bold">Lorem ipsum dolor, <a class="paragraph__link paragraph__link--red">sit amet
+                    <p class="fw-bold text-center">Lorem ipsum dolor, <a class="paragraph__link paragraph__link--red">sit amet
                             consectetur</a> sit amet consectetur adipisicing elit. Magni illum perspiciatis doloremque
                         voluptas in neque natus sunt deserunt quae eum atque ipsum, hic praesentium tempore nesciunt
                         ipsam

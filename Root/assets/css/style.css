@@ -10,17 +10,6 @@ body {
     color: white;
 }
 
-/* NAVEGACION */
-nav {
-    background-color: black;
-    width: 80%;
-    margin: 5px auto;
-}
-
-nav ul {
-    list-style: none;
-}
-
 .menu>li {
     position: relative;
     display: inline-block;
@@ -76,11 +65,7 @@ h1 {
 
 /* SUBTITULOS */
 
-h2 {
-    text-align: center;
-    font-size: 3em;
-    padding: 30px;
-}
+
 
 .paragraph .paragraph__link--red {
     color: red;
