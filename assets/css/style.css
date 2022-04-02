@@ -65,11 +65,7 @@ h1 {
 
 /* SUBTITULOS */
 
-h2 {
-    text-align: center;
-    font-size: 3em;
-    padding: 30px;
-}
+
 
 .paragraph .paragraph__link--red {
     color: red;
