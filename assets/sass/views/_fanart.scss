@@ -1,0 +1,28 @@
+/* GRID */
+
+.galeria_fanart {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+        "img1 img2"
+        "img3 img4";
+}
+
+.imagecenter {
+    width: 100%;
+}
+
+/* MEDIA QUERIE */ 
+
+@media screen and (max-width:720px) {
+    .galeria_fanart {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas:
+            "img1"
+            "img2"
+            "img3"
+            "img4";
+    }
+}

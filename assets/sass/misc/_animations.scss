@@ -1,0 +1,17 @@
+/* MOVIMIENTO */
+#comprarAhora img{
+    transition: 2s ease-in-out;
+}
+
+#comprarAhora img:hover{
+    transform: scale(1.2);
+}
+
+/* CAMBIA COLOR */
+#bienvenidos{
+    transition: color 4s ease-in-out;
+}
+
+#bienvenidos:hover{
+    color: darkred;
+}
