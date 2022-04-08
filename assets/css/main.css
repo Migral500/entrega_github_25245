@@ -1,5 +1,57 @@
 /* MISC */
+/* FONDO TEXTURA */
+main {
+  background: url(../img/wallpaper.jpg); }
+
 /* PARTIALS */
+/* TITULOS */
+h1 {
+  color: #cccccc;
+  text-decoration: underline;
+  font-size: 5em;
+  position: relative;
+  text-align: center;
+  padding: 30px; }
+
+/* SUBTITULOS */
+h2 {
+  text-align: center;
+  font-size: 3em;
+  padding: 30px; }
+
+.paragraph .paragraph__link--red {
+  color: red; }
+
+.paragraph {
+  padding: 0% 15%; }
+
+.menu > li {
+  position: relative;
+  display: inline-block;
+  left: 38%; }
+
+.menu > li > a {
+  display: block;
+  text-decoration: none;
+  padding: 15px 10px;
+  color: white; }
+  .menu > li > a:hover {
+    text-decoration: underline; }
+
+.subMenu {
+  position: absolute;
+  width: 100%;
+  display: none; }
+
+.menu li:hover .subMenu {
+  display: block;
+  color: white;
+  padding: 5px; }
+
+.subMenu li a {
+  display: block;
+  padding: 5px; }
+
 footer {
   display: flex;
   justify-content: flex-end;
@@ -7,3 +59,11 @@ footer {
   background-color: black; }
 
 /* VIEWS */
+/* DESCRIPCION BIENVENIDOS */
+.paragraph_01 {
+  padding: 20px; }
+
+.imagecenter {
+  display: flex;
+  justify-content: center;
+  padding: 5px; }
