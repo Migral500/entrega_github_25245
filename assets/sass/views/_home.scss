@@ -9,3 +9,24 @@
     justify-content: center;
     padding: 5px;
 }
+
+/* MAPA */
+
+.parrafoCentrado {
+    @include centrar-texto();
+    color: map-get($paletaDeColores, naranja);
+    font-size: map-get($paletaDeColores, font-size);
+
+}
+
+/* EXTEND */
+
+.primero{
+    font-size: 2rem;
+    color: black;
+}
+
+.segundo{
+    @extend .primero;
+    background-color: darkblue;
+}

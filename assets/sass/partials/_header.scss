@@ -58,3 +58,10 @@ h2 {
     display: block;
     padding: 5px;
 }
+
+.parrafoCentrado {
+    @include centrar-texto();
+    color: map-get($paletaDeColores, naranja);
+    font-size: map-get($paletaDeColores, font-size);
+
+}

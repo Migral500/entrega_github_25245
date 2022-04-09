@@ -3,6 +3,20 @@
 main {
   background: url(../img/wallpaper.jpg); }
 
+/* MOVIMIENTO */
+#comprarAhora img {
+  transition: 2s ease-in-out; }
+
+#comprarAhora img:hover {
+  transform: scale(1.2); }
+
+/* CAMBIA COLOR */
+#bienvenidos {
+  transition: color 4s ease-in-out; }
+
+#bienvenidos:hover {
+  color: darkred; }
+
 /* PARTIALS */
 /* TITULOS */
 h1 {
@@ -52,11 +66,30 @@ h2 {
   display: block;
   padding: 5px; }
 
+.parrafoCentrado {
+  text-align: center;
+  text-decoration: underline;
+  color: #ee8555;
+  font-size: 1.5rem; }
+
 footer {
   display: flex;
   justify-content: flex-end;
   padding: 20px;
   background-color: black; }
+
+form {
+  margin: 0 auto;
+  width: 300px;
+  padding: 20px; }
+
+.field {
+  border: 1px #ccc;
+  padding: 10px;
+  width: 300px; }
+
+.content_center {
+  width: 115%; }
 
 /* VIEWS */
 /* DESCRIPCION BIENVENIDOS */
@@ -67,3 +100,35 @@ footer {
   display: flex;
   justify-content: center;
   padding: 5px; }
+
+/* MAPA */
+.parrafoCentrado {
+  text-align: center;
+  text-decoration: underline;
+  color: #ee8555;
+  font-size: 1.5rem; }
+
+/* EXTEND */
+.primero, .segundo {
+  font-size: 2rem;
+  color: black; }
+
+.segundo {
+  background-color: darkblue; }
+
+/* GRID */
+.galeria_fanart {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: "img1 img2" "img3 img4"; }
+
+.imagecenter {
+  width: 100%; }
+
+/* MEDIA QUERIE */
+@media screen and (max-width: 720px) {
+  .galeria_fanart {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: "img1" "img2" "img3" "img4"; } }
